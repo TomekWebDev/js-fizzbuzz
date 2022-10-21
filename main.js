@@ -24,7 +24,7 @@ versione con console
 // }
 
 /************************************************** 
-versione con output html - Bonus 1
+versione con output html - Bonus 1 + aggiunta stile (Bonus 2)
 ***************************************************/
 
 
@@ -35,38 +35,44 @@ document.getElementById("main").append(mainContainer)
 
 
 
-for (let i = 0; i <= 100
-    ; i++){
+for (let i = 0; i <= 100; i++){
 
     if( i % 3 == 0 && i != 0 && i % 5 == 0) { 
         console.log("fizzBuzz");
         let box = document.createElement("div")
-        box.classList.add('bg-light',"col-2", "m-2", "text-center","p-0",'text-lg')
-        box.innerText = i;
+        box.classList.add("col-2", "d-flex", "justify-content-center", "m-2", "p-0",'text-lg')
         document.getElementById("main-container").append(box)
+        box.innerHTML = `<div class="game-card d-flex justify-content-center align-items-center bg-primary">Fizz Buzz</div>`;
+        
+        
         }
     else if( i % 3 == 0 && i != 0 ) { 
         console.log("fizz");
         let box = document.createElement("div")
-        box.classList.add('bg-light',"col-2", "m-2", "text-center","p-0",'text-lg')
-        box.innerText = "fizz";
+        box.classList.add("col-2", "d-flex", "justify-content-center", "m-2", "p-0",'text-lg')
         document.getElementById("main-container").append(box)
+        box.innerHTML = `<div class="game-card d-flex justify-content-center align-items-center bg-warning">Fizz</div>`;
         }
     else if(i % 5 == 0 && i != 0) {
         console.log("buzz");  
         let box = document.createElement("div")
-        box.classList.add('bg-light',"col-2", "m-2", "text-center","p-0",'text-lg')
-        box.innerText = "buzz";
+        box.classList.add("col-2", "d-flex", "justify-content-center", "m-2", "p-0",'text-lg')
         document.getElementById("main-container").append(box)
+        box.innerHTML = `<div class="game-card d-flex justify-content-center align-items-center bg-success">Buzz</div>`;
         } 
     else {
         console.log(i);
         let box = document.createElement("div")
-        box.classList.add('bg-light',"col-2", "m-2", "text-center","p-0",'text-lg')
-        box.innerText = i;
+        box.classList.add("col-2", "d-flex", "justify-content-center", "m-2", "p-0",'text-lg')
         document.getElementById("main-container").append(box)
+        box.innerHTML = `<div class="game-card d-flex justify-content-center align-items-center bg-black text-white">${i}</div>`;
     }
         
-    
 }
+
+
+/************************************************** 
+versione con input utente - test
+***************************************************/
+
 

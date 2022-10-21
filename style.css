@@ -1,4 +1,5 @@
-main{
-    height: 100vh;
+.game-card{
+    height: 200px;
+    width: 200px;
 }
 
