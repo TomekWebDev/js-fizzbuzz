@@ -1,4 +1,6 @@
-// ciclo for con console per verifica numeri multipli
+/************************************************** 
+versione con console
+***************************************************/
 
 // utilizzo anche lo 0 come numero di partenza così se i numeri
 // arrivassero da un input utente non devo verificare che siano diversi
@@ -8,14 +10,23 @@
 
 for (let i = 0; i <= 100; i++){
 
-    if( i % 3 == 0 && i != 0 ) { 
-        console.log(i,"è multiplo  di 3");
+    if( i % 3 == 0 && i != 0 && i % 5 == 0) { 
+        console.log("fizzBuzz");
         }
-    else console.log(i,"non è multiplo di 3"); 
-    
-    if(i % 5 == 0 && i != 0) {
-        console.log(i,"è Multiplo di 5");  
+
+    else if( i % 3 == 0 && i != 0 ) { 
+        console.log("fizz");
         }
-    else console.log(i,"non è multiplo di 5"); 
+    else if(i % 5 == 0 && i != 0) {
+        console.log("buzz");  
+        } 
+    else console.log(i);
     
 }
+
+/************************************************** 
+versione con output html
+***************************************************/
+
+
+
